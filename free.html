@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSEnqZSBrMRaoYuf-akZ9kuOh35meR2OIJ9w&usqp=CAU);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        form{
+            text-align: center;
+            width: 70%;
+            margin: 0 auto;
+            padding: 1em;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.699);
+        }
+            h1, p{
+                text-align: center;
+                text-transform: capitalize;
+            }   
+        
+        ul, li{
+            list-style-type: none;
+        }
+        
+        .c1{
+            width: 80%;
+            padding-top: 20px
+        }
+        .c2{
+            width: 80%;
+            padding-top: 20px;
+        }
+        .c3{
+            width: 80%;
+            padding-top: 20px;
+        }
+        .select{
+            width: 50%;
+            padding: 1em;
+
+        }
+    
+
+        
+    </style>
+</head>
+<body>
+    
+    <form id="survey-form">    
+        <h1 id="title">survey form</h1>
+        <p id="description">fill out the required survey</p>      
+            <ul>
+                <li>
+                 <div class="c1">
+                    <label for="name-label">Name</label>
+                    <input type="text" name="name" id="name" placeholder="name" required>
+                 </div>
+                </li>
+                <li>
+                 <div class="c2">
+                    <label for="email-label">Email</label>
+                    <input type="email" name="email" id="email" placeholder="amaka@gmail.com" required>
+                </div>  
+                </li>
+                <li>
+                   <div class="c3">
+                    <label for="number-label">Age</label>
+                    <input type="number" name="age" id="age" min="9" max="60" placeholder="19" required>
+                </div>
+                </li>
+                    <h2>choose your skills</h2>
+                    <select id="dropdown">
+                        <option value="css">css</option>
+                        <option value="javascript">javascript</option>
+                        <option value="html">html</option>
+                        <option value="react">react</option>
+                    </select>
+                
+            </ul>
+
+            <h2>do you suggest web development is essential to the society?</h2>
+            <ol>
+                <li>
+                    <label id="yes">Yes</label> <input type="radio" name="name" id="yes" value="no" checked>
+                </li>
+                <li>
+                    <label id="no">No</label> <input type="radio" name="name" id="no" value="no">
+                </li>
+                <li>
+                    <label id="maybe">Maybe</label> <input type="radio" name="name" id="maybe" value="maybe">
+                </li>
+            </ol>
+            <h2>what course would you prefer</h2>
+            <select id="option">
+                <option>web design</option>
+                <option>microsoft word</option>
+                <option>ms excel</option>
+                <option>coding</option>
+            </select>
+            <h2>select the skill which you are capable of doing</h2>
+            <ul>
+                <li>
+                    <input type="checkbox" name="catering" id="catering" value="catering">
+                    <label for="catering">Catering</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="programming" id="programming">
+                    <label for="programming">Programming</label>
+                </li>
+                <li>
+                    
+                    <input type="checkbox" name="fashion designing" id="fashion designing" value="fashion designing">
+                    <label for="fd">fashion designing</label>
+                </li>
+                <li>
+                    
+                    <input type="checkbox" name="hair stylist" id="hair stylist" value="hair stylist">
+                    <label for="hs"></label>
+                </li>
+                <li>
+                    
+                    <input type="checkbox" name="Nursing" id="Nursing" value="Nursing">
+                    <label for="nu">Nursing</label>
+                </li>
+                <li>
+                    
+                    <input type="checkbox" name="marketting" id="marketting" value="marketting">
+                    <label for="mk">marketting</label>
+                </li>
+                <li>
+                    
+                    <input type="checkbox" name="cobbler" id="cobbler" value="cobbler">
+                    <label for="cl"></label>
+                </li>
+                <li>
+                    
+                    <input type="checkbox" name="beed-making" id="beed-making" value="beed-making">
+                    <label for="bm">Beed-making</label>
+                </li>
+            </ul>
+            <p>comment your suggestion</p>
+               <textarea name="comment here" id="comment" cols="40" rows="9"></textarea>
+        </form>
+        <button id="submit">submit</button>
+</body>
+</html>
